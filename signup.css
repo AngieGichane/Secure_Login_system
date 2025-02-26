@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Clean, default font */
+}
+
+body {
+    background: hsl(210, 37%, 97%); /* Light background for a soft and clean look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #252525;
+}
+
+/* Container for the form */
+.container {
+    width: 100%;
+    max-width: 450px; /* Limits the container width */
+    padding: 30px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #252525;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #daa111; /* orange color when input is focused */
+    box-shadow: 0 0 8px rgba(145, 248, 1, 0.995); /* Light green glow effect */
+}
+
+button {
+    padding: 12px;
+    background-color: #47e2f397; /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b73ad; /* Darker blue on hover */
+}
+
+/* Link styling */
+p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #89ecf5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}

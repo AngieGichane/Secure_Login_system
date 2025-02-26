@@ -1,0 +1,116 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4caf5696, #97c34ad7); /* Fresh green gradient */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Container for the form */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Light background for the form */
+    border-radius: 12px; /* Soft rounded corners */
+    padding: 40px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Responsive container width */
+}
+
+/* Form container */
+.form-container {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600; /* Slightly bold for title */
+    color: #333;
+}
+
+/* Form inputs and button */
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Subtle border color */
+    border-radius: 8px; /* Rounded corners */
+    background: #f9f9f9; /* Light background */
+    color: #333;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #4abf4e; /* Green border on focus */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Green glow effect */
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #7d7c7c;
+}
+
+/* Form button */
+.form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #5ad64acd; /* Green button */
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background: #2c5f26; /* Darker green on hover */
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-container a {
+    color: #4bd850;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: #215720e6; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.6rem; /* Slightly smaller heading */
+    }
+
+    .form input {
+        font-size: 0.9rem; /* Adjust input text size */
+    }
+
+    .form button {
+        font-size: 1rem;
+    }
+}
